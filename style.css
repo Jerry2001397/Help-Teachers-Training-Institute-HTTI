@@ -153,8 +153,15 @@ body {
 
 @media (max-width: 600px) {
   .logo-topright {
-    width: 44px;
-    max-width: 16vw;
+    width: 64px;
+    max-width: 28vw;
+    margin-left: 0;
+  }
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
   }
 }
 
