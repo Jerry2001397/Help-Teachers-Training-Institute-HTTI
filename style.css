@@ -1,3 +1,57 @@
+/* Footer shortcut vertical list styling */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.7em 0 0.7em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3em;
+}
+.footer-links-list li {
+  margin: 0;
+}
+.footer-links-list a {
+  color: var(--primary-green);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-shadow: 0 0 4px #b6f7c7, 0 0 8px #218a43aa;
+}
+.footer-links-list a:hover {
+  color: var(--gold-yellow);
+  text-shadow: 0 0 8px #ffe066, 0 0 16px #ffd700cc;
+  text-decoration: underline;
+}
+/* Footer shortcut links styling */
+.footer-shortcuts {
+  margin-top: 1.2em;
+  font-size: 1rem;
+  color: var(--primary-green);
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 0;
+}
+.footer-links {
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+}
+.footer-links a {
+  color: var(--primary-green);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-shadow: 0 0 4px #b6f7c7, 0 0 8px #218a43aa, 0 0 8px var(--gold-yellow);
+}
+.footer-links a:hover {
+  color: var(--gold-yellow);
+  text-shadow: 0 0 8px #ffe066, 0 0 16px #ffd700cc;
+  text-decoration: underline;
+}
 /* Color palette */
 :root {
   --primary-green: #218a43;
@@ -40,6 +94,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 0 8px var(--gold-yellow);
 }
 .about-section h3 {
   color: var(--primary-green);
@@ -50,6 +105,7 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
+  text-shadow: 0 0 8px var(--gold-yellow);
 }
 .about-section h3::before {
   content: '';
@@ -61,7 +117,7 @@
   margin-right: 0.5em;
 }
 .about-section p {
-  color: #444;
+  color: var(--primary-text);
   font-size: 1.08rem;
   margin-bottom: 1.1rem;
   line-height: 1.7;
@@ -71,7 +127,7 @@
   margin-bottom: 1.2rem;
 }
 .about-section ul li {
-  color: #2c3e50;
+  color: var(--primary-text);
   font-size: 1.05rem;
   margin-bottom: 0.5em;
   position: relative;
@@ -246,22 +302,22 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #e72c4b;
+  color: var(--primary-green);
   font-weight: 600;
   font-size: 1.08rem;
   transition: color 0.2s;
 }
 nav a:hover {
-  color: #2c3e50;
+  color: var(--gold-yellow);
   text-decoration: underline;
 }
 h1, h2 {
-  color: #2c3e50;
+  color: var(--primary-green);
   font-weight: 700;
 }
 
 section {
-  background: #f9fafc;
+  background: var(--surface);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.03);
