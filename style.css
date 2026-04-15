@@ -315,7 +315,7 @@ body {
   background: #111;
   position: relative;
   border-radius: 2px;
-  box-shadow: 0 0 8px #ffe066, 0 0 8px #000;
+    box-shadow: 0 0 3px #fff9c4, 0 0 6px #000;
 }
 .menu-icon::before,
 .menu-icon::after {
@@ -326,7 +326,7 @@ body {
   height: 2.5px;
   background: #111;
   border-radius: 2px;
-  box-shadow: 0 0 8px #ffe066, 0 0 8px #000;
+    box-shadow: 0 0 3px #fff9c4, 0 0 6px #000;
   transition: 0.2s;
 }
 .menu-icon::before {
