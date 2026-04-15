@@ -1,3 +1,15 @@
+/* Footer styling */
+.site-footer {
+  width: 100%;
+  background: #f4f6fb;
+  color: #888;
+  text-align: center;
+  padding: 1.2rem 0 1.2rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #e0e3ea;
+  margin-top: 2.5rem;
+}
 /* About page professional styling */
 .about-section {
   background: #f9fafc;
