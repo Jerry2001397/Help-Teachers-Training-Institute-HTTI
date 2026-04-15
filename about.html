@@ -4,30 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTTI - About Us</title>
-  <link rel="stylesheet" href="../src/App.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <button class="menu-btn" aria-label="Open menu">
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">
       <span class="menu-icon"></span>
     </button>
+    <nav class="side-menu" id="sideMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="admin.html">Admin</a>
+      <a href="staffs.html">Staffs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <header class="header">
-      <img src="../src/assets/help-logo.png" alt="HTTI Logo" class="logo" />
+      <img src="/help-logo.png" alt="HTTI Logo" class="logo logo-topright" />
       <h1>Help Teachers Training Institute (HTTI)</h1>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="admin.html">Admin</a>
-        <a href="staffs.html">Staffs</a>
-        <a href="contact.html">Contact</a>
-      </nav>
     </header>
     <main>
       <section>
         <h2>About Us</h2>
-        <p>Help Teachers Training Institute (HTTI) is dedicated to training and empowering teachers with the skills and knowledge needed for effective teaching. [Replace with more info from brochure]</p>
+        <h3>THE VISION</h3>
+        <p>Our vision is to inspire educators with holistic ethical leadership practices and enhance their skills and techniques to help improve the educational landscape.</p>
+        <h3>THE MISSION</h3>
+        <p>Our mission is to enhance teachers' skills and techniques with modern foundational, content, and pedagogical strategies that foster better engagement and management of students, while ensuring that all learners sufficiently benefit from the educational experience.</p>
+        <h3>Training EVENTS</h3>
+        <ul>
+          <li>Instructor @ work in class</li>
+          <li>HELP Teacher Training Institute (HELP TTI)</li>
+        </ul>
+        <h3>CORE VALUES</h3>
+        <ul>
+          <li>Professionalism</li>
+          <li>Dignity</li>
+          <li>Excellence</li>
+          <li>Ethics</li>
+        </ul>
       </section>
     </main>
   </div>
 </body>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  menuBtn.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+  });
+</script>
 </html>
