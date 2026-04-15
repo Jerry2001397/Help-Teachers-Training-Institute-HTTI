@@ -33,8 +33,17 @@
 <script>
   const menuBtn = document.getElementById('menuBtn');
   const sideMenu = document.getElementById('sideMenu');
-  menuBtn.addEventListener('click', () => {
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     sideMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (sideMenu.classList.contains('open')) {
+      // Close if click is outside menu and button
+      if (!sideMenu.contains(e.target) && e.target !== menuBtn && !menuBtn.contains(e.target)) {
+        sideMenu.classList.remove('open');
+      }
+    }
   });
 </script>
 </html>

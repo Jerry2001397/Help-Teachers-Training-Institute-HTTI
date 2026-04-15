@@ -154,10 +154,10 @@ body {
 
 @media (max-width: 600px) {
   .logo-topright {
-    width: 44px;
-    top: 10px;
-    right: 10px;
-    max-width: 22vw;
+    width: 32px;
+    top: 6px;
+    right: 6px;
+    max-width: 14vw;
   }
 }
 
