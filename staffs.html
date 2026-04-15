@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTTI - Staffs</title>
-  <link rel="stylesheet" href="../src/App.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <button class="menu-btn" aria-label="Open menu">
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">
       <span class="menu-icon"></span>
     </button>
+    <nav class="side-menu" id="sideMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="admin.html">Admin</a>
+      <a href="staffs.html">Staffs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <header class="header">
-      <img src="../src/assets/help-logo.png" alt="HTTI Logo" class="logo" />
+      <img src="help-logo.png" alt="HTTI Logo" class="logo logo-topright" />
       <h1>Help Teachers Training Institute (HTTI)</h1>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="admin.html">Admin</a>
-        <a href="staffs.html">Staffs</a>
-        <a href="contact.html">Contact</a>
-      </nav>
     </header>
     <main>
       <section>
@@ -30,4 +30,11 @@
     </main>
   </div>
 </body>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  menuBtn.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+  });
+</script>
 </html>
