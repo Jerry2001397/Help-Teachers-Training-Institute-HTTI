@@ -1,3 +1,66 @@
+/* About page professional styling */
+.about-section {
+  background: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-section h2 {
+  color: #e72c4b;
+  font-size: 2.1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.about-section h3 {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.about-section h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #e72c4b;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.about-section p {
+  color: #444;
+  font-size: 1.08rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+.about-section ul {
+  padding-left: 1.2em;
+  margin-bottom: 1.2rem;
+}
+.about-section ul li {
+  color: #2c3e50;
+  font-size: 1.05rem;
+  margin-bottom: 0.5em;
+  position: relative;
+  padding-left: 1.2em;
+}
+.about-section ul li::before {
+  content: '\2022';
+  color: #e72c4b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 .side-menu {
   position: absolute;
   top: 80px;
