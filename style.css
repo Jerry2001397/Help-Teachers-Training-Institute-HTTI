@@ -1,4 +1,84 @@
+.side-menu {
+  position: absolute;
+  top: 80px;
+  left: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 1rem 1.5rem;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 30;
+}
+.side-menu.open {
+  display: flex;
+}
+.side-menu a {
+  color: #e72c4b;
+  font-weight: 600;
+  font-size: 1.08rem;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  transition: color 0.2s;
+}
+.side-menu a:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
 /* Position logo in upper right corner for HTML pages */
+/* Twilio-like modern style and menu button */
+body {
+  background: linear-gradient(135deg, #f4f6fb 0%, #e9ecf5 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: box-shadow 0.2s;
+}
+.menu-btn:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.menu-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #2c3e50;
+  position: relative;
+}
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #2c3e50;
+  transition: 0.2s;
+}
+.menu-icon::before {
+  top: -8px;
+}
+.menu-icon::after {
+  top: 8px;
+}
+
 .logo-topright {
   position: absolute;
   top: 20px;
@@ -16,12 +96,14 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   position: relative;
+  min-height: 80vh;
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 .logo {
   width: 120px;
@@ -29,16 +111,32 @@
 }
 nav {
   margin-top: 1rem;
+  background: #f4f6fb;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 0.5rem 1rem;
 }
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
+  color: #e72c4b;
+  font-weight: 600;
+  font-size: 1.08rem;
+  transition: color 0.2s;
 }
 nav a:hover {
+  color: #2c3e50;
   text-decoration: underline;
 }
 h1, h2 {
   color: #2c3e50;
+  font-weight: 700;
+}
+
+section {
+  background: #f9fafc;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  margin-top: 1.5rem;
 }
