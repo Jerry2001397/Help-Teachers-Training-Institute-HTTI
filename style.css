@@ -1,14 +1,22 @@
+/* Color palette */
+:root {
+  --primary-green: #218a43;
+  --gold-yellow: #ffd700;
+  --primary-bg: #f8faf5;
+  --primary-text: #1a2e1a;
+}
 /* Footer styling */
 .site-footer {
   width: 100%;
-  background: #f4f6fb;
-  color: #888;
+  background: var(--primary-bg);
+  color: var(--primary-green);
   text-align: center;
   padding: 1.2rem 0 1.2rem 0;
   font-size: 1rem;
   letter-spacing: 0.5px;
   border-top: 1px solid #e0e3ea;
   margin-top: 2.5rem;
+  font-weight: 600;
 }
 /* About page professional styling */
 .about-section {
@@ -23,14 +31,18 @@
   margin-right: auto;
 }
 .about-section h2 {
-  color: #e72c4b;
+  color: var(--primary-green);
   font-size: 2.1rem;
   margin-bottom: 1.2rem;
   text-align: center;
   letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--primary-green) 60%, var(--gold-yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .about-section h3 {
-  color: #2c3e50;
+  color: var(--primary-green);
   font-size: 1.25rem;
   margin-top: 1.8rem;
   margin-bottom: 0.5rem;
@@ -44,7 +56,7 @@
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #e72c4b;
+  background: var(--gold-yellow);
   border-radius: 50%;
   margin-right: 0.5em;
 }
@@ -67,7 +79,7 @@
 }
 .about-section ul li::before {
   content: '\2022';
-  color: #e72c4b;
+  color: var(--gold-yellow);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -80,25 +92,29 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1rem;
   display: none;
   flex-direction: column;
-  min-width: 180px;
+  min-width: 135px;
+  max-width: 180px;
+  width: 90vw;
   z-index: 30;
 }
 .side-menu.open {
   display: flex;
 }
 .side-menu a {
-  color: #e72c4b;
-  font-weight: 600;
+  color: var(--primary-green);
+  font-weight: 700;
   font-size: 1.08rem;
   text-decoration: none;
-  margin: 0.5rem 0;
-  transition: color 0.2s;
+  margin: 0.35rem 0;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-shadow: 0 0 6px #b6f7c7, 0 0 12px #218a43aa;
 }
 .side-menu a:hover {
-  color: #2c3e50;
+  color: var(--gold-yellow);
+  text-shadow: 0 0 8px #ffe066, 0 0 16px #ffd700cc;
   text-decoration: underline;
 }
 /* Position logo in upper right corner for HTML pages */
