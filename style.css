@@ -6,17 +6,29 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.3em;
+  gap: 0.5em;
+}
+.footer-shortcuts strong {
+  font-size: 1.3em;
+  color: var(--gold-yellow);
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px var(--gold-yellow), 0 0 4px var(--primary-green);
+  margin-bottom: 0.5em;
+  display: block;
 }
 .footer-links-list li {
   margin: 0;
 }
 .footer-links-list a {
   color: var(--primary-green);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.15em;
   text-decoration: none;
   transition: color 0.2s, text-shadow 0.2s;
-  text-shadow: 0 0 4px #b6f7c7, 0 0 8px #218a43aa;
+  text-shadow: 0 0 8px var(--gold-yellow), 0 0 8px #176B4D66;
+  padding: 0.1em 0.3em;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.5);
 }
 .footer-links-list a:hover {
   color: var(--gold-yellow);
@@ -26,12 +38,19 @@
 /* Footer shortcut links styling */
 .footer-shortcuts {
   margin-top: 1.2em;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--primary-green);
   text-align: left;
   width: 100%;
-  max-width: 300px;
+  max-width: 260px;
   margin-left: 0;
+  margin-right: auto;
+  font-weight: 700;
+  filter: drop-shadow(0 0 8px var(--gold-yellow));
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 1.2em 1.2em 1.2em 0.5em;
+  box-shadow: 0 2px 12px 0 var(--gold-yellow), 0 0 8px var(--primary-green);
 }
 .footer-links {
   margin-top: 0.5em;
