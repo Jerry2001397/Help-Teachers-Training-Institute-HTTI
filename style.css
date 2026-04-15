@@ -143,21 +143,18 @@ body {
 }
 
 .logo-topright {
-  position: absolute;
-  top: 16px;
-  right: 12px;
-  width: 54px;
+  position: static;
+  width: 72px;
   height: auto;
   z-index: 10;
-  max-width: 16vw;
+  max-width: 20vw;
+  margin-left: auto;
 }
 
 @media (max-width: 600px) {
   .logo-topright {
-    width: 32px;
-    top: 8px;
-    right: 8px;
-    max-width: 12vw;
+    width: 44px;
+    max-width: 16vw;
   }
 }
 
@@ -173,10 +170,32 @@ body {
 }
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
   padding-top: 2rem;
+  width: 100%;
+}
+.header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+.menu-btn {
+  position: static;
+  margin-right: auto;
+  margin-left: 0;
+  top: unset;
+  left: unset;
+}
+@media (max-width: 600px) {
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 .logo {
   width: 120px;
