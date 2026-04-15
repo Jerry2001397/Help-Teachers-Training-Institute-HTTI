@@ -1,3 +1,56 @@
+/* Show school name above logo/menu only on small screens */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.7em;
+    gap: 0.2em;
+  }
+  .school-title-mobile {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--primary-green);
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px var(--gold-yellow), 0 2px 8px #176B4D66;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: rgba(255,255,255,0.92);
+    border-radius: 10px;
+    padding: 0.4em 0.7em;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+    width: 100%;
+    max-width: 95vw;
+  }
+  .header h1 {
+    display: none;
+  }
+}
+.school-title-mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .school-title-mobile {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--primary-green);
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px var(--gold-yellow), 0 2px 8px #176B4D66;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: rgba(255,255,255,0.92);
+    border-radius: 10px;
+    padding: 0.4em 0.7em;
+    margin-bottom: 0.7em;
+    margin-top: 0.2em;
+  }
+  .header h1 {
+    display: none;
+  }
+}
 /* Footer shortcut vertical list styling */
 .footer-links-list {
   list-style: none;
