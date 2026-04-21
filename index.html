@@ -16,6 +16,9 @@
       <a href="staffs.html">Staffs</a>
       <a href="courses-offered.html">Courses Offered</a>
       <a href="school-activities.html">School Activities</a>
+      <a href="research.html">Research</a>
+      <a href="online-library.html">Online Library</a>
+      <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
     <header class="header">
@@ -32,7 +35,7 @@
           <div class="relative z-10 space-y-6">
             <div class="space-y-4">
             
-            <h1 class="home-intro-title">Help Teachers Training Institute</h1>
+            <h1 class="home-intro-title">Help Teachers Training Institute-HTTI</h1>
               <p class="home-intro-lead">We prepare teachers with practical classroom skills, strong professional values, and modern learning tools that support better outcomes for every learner.</p>
             </div>
             <div class="flex flex-col gap-3 sm:flex-row">
@@ -115,6 +118,9 @@
             <li><a href="admin.html">Administration</a></li>
             <li><a href="staffs.html">Staffs</a></li>
             <li><a href="courses-offered.html">Courses Offered</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="online-library.html">Online Library</a></li>
+            <li><a href="services.html">Services</a></li>
           </ul>
         </section>
         <section>
@@ -162,19 +168,35 @@
     </footer>
   </div>
   <script>
+    const header = document.querySelector('.header');
     const menuBtn = document.getElementById('menuBtn');
     const sideMenu = document.getElementById('sideMenu');
+    const syncHeaderState = () => {
+      header.classList.toggle('scrolled', window.scrollY > 12);
+    };
+    const closeMenu = () => {
+      sideMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    menuBtn.setAttribute('aria-expanded', 'false');
     menuBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      sideMenu.classList.toggle('open');
+      const isOpen = sideMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
     });
     document.addEventListener('click', (e) => {
-      if (sideMenu.classList.contains('open')) {
-        if (!sideMenu.contains(e.target) && e.target !== menuBtn && !menuBtn.contains(e.target)) {
-          sideMenu.classList.remove('open');
-        }
+      if (sideMenu.classList.contains('open') && !sideMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenu();
       }
     });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMenu();
+      }
+    });
+    window.addEventListener('scroll', syncHeaderState, { passive: true });
+    syncHeaderState();
   </script>
 </body>
 </html>
