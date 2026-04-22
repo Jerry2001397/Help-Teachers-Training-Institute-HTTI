@@ -470,6 +470,221 @@
   line-height: 1.7;
 }
 
+.contact-page {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 249, 252, 0.99) 100%);
+}
+
+.contact-hero {
+  display: grid;
+  gap: 1.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.contact-hero-copy {
+  padding: 1.55rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 41, 59, 0.88) 100%);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.18);
+}
+
+.contact-hero-copy h1 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.contact-lead {
+  margin: 0.95rem 0 0;
+  color: rgba(248, 250, 252, 0.92);
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.contact-highlight-card {
+  padding: 1.35rem;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #f5e7b3 0%, #d9b24c 100%);
+  border: 1px solid rgba(217, 178, 76, 0.36);
+  box-shadow: 0 18px 40px rgba(217, 178, 76, 0.18);
+}
+
+.contact-highlight-label,
+.contact-card-label {
+  margin: 0 0 0.9rem;
+  color: #5f4300;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-highlight-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact-highlight-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: #1f2937;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.contact-highlight-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: #0f172a;
+}
+
+.contact-grid,
+.contact-social-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-card,
+.contact-social-card {
+  display: block;
+  padding: 1.35rem;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid rgba(52, 72, 94, 0.1);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+  text-decoration: none;
+}
+
+.contact-card h2,
+.contact-social-head h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.45rem;
+  line-height: 1.24;
+}
+
+.contact-main-link {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  color: #8f6b18;
+  font-size: 1.04rem;
+  font-weight: 800;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-link-stack {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.contact-support-copy {
+  margin: 0.85rem 0 0;
+  color: #475569;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.contact-social-section {
+  margin-top: 1.4rem;
+}
+
+.contact-social-head {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.contact-social-title,
+.contact-social-handle,
+.contact-social-copy {
+  display: block;
+}
+
+.contact-social-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-social-badge {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  flex: 0 0 auto;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.contact-social-badge svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: #ffffff;
+}
+
+.contact-social-title {
+  color: #0f172a;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.contact-social-handle {
+  margin-top: 0.4rem;
+  color: #8f6b18;
+  font-weight: 700;
+}
+
+.contact-social-copy {
+  margin-top: 0.75rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.contact-social-facebook {
+  border-color: rgba(24, 119, 242, 0.18);
+}
+
+.contact-social-facebook .contact-social-badge {
+  background: linear-gradient(180deg, #1877f2 0%, #0d65d9 100%);
+}
+
+.contact-social-whatsapp {
+  border-color: rgba(37, 211, 102, 0.18);
+}
+
+.contact-social-whatsapp .contact-social-badge {
+  background: linear-gradient(180deg, #25d366 0%, #1fb658 100%);
+}
+
+.contact-social-linkedin {
+  border-color: rgba(10, 102, 194, 0.16);
+}
+
+.contact-social-linkedin .contact-social-badge {
+  background: linear-gradient(180deg, #0a66c2 0%, #0959a8 100%);
+}
+
+.contact-social-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.contact-social-card-muted {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
 .about-section .course-item {
   display: flex;
   align-items: flex-start;
@@ -616,6 +831,25 @@
 
   .courses-section-head {
     grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    align-items: end;
+  }
+
+  .contact-hero {
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.95fr);
+    align-items: stretch;
+  }
+
+  .contact-grid,
+  .contact-social-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-social-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-social-head {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
     align-items: end;
   }
 }
